@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexible box model</title>
+    <title>flex grow and flex shrink </title>
 
     <style>
         div.container{
             background-color: rgba(0, 255, 255, 0.649);
             display: flex;
             flex-flow: row nowrap;
+
         }
         
         div.item{
@@ -17,7 +18,10 @@
             border: 1px solid black;
             /* flex: auto; */
             text-align: center;
-            flex-basis:200px;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
         }
 
     </style>
@@ -28,10 +32,7 @@
           <div class="item">A</div>
           <div class="item">B</div>
           <div class="item">C</div>
-          <div class="item">D</div>
-          <div class="item">conteudo maior </div>
-          <div class="item">F</div>
-          <div class="item"> conteudo maior ainda que vai ocupar mais eopaco</div>
+          
 
     </div>
     

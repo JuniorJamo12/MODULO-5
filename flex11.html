@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex grow and flex shrink </title>
+
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: rgba(0, 255, 255, 0.649);
+            border: 1px solid black;
+            /* flex: auto; */
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        .item {
+            flex-basis: 150px;
+        }
+
+        .item:nth-child(1) {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .item:nth-child(2) {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        .item:nth-child(3) {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+</body>
+
+</html>
