@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            background-color: darkgray;
+            padding: 14px;
+            margin-bottom: 20px;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        main {
+            background-color: white;
+            border: 1px solid black;
+            font-size: 22px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 18px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            font-size: 23px;
+            padding: 7px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 9px;
+            display: inline-block;
+        }
+
+        li>a:hover {
+            color: black;
+            background-color: white;
+            transition-timing-function: ease;
+            transform: translate(-50%, -50%);
+
+        }
+
+        @media screen and (min-width :768px) {
+
+            /* body {
+                    display: flex;
+                    flex: row wrap;
+                } */
+
+            div#cabecalho {
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            ul {
+                flex: auto;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cabecalho">
+        <h1> Meu Site</h1>
+        <ul>
+            <li><a href="">opcao 1</a></li>
+            <li><a href=""> opcao 2</a></li>
+            <li><a href=""> opcao 3 </a></li>
+            <li><a href=""> opcao 4 </a></li>
+            <li><a href="">opcao 5</a></li>
+            <li><a href=""> opcao 6</a></li>
+        </ul>
+
+    </div>
+
+    <main>
+        <p>
+        <h2>Teste de Flexbox</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia voluptas quidem praesentium quos amet
+        officia vero ipsam hic modi, quaerat cupiditate optio consequuntur incidunt, nisi dicta. Quod, ea sapiente.
+        Non maxime amet unde consequatur accusantium incidunt quas tempora ratione natus animi rerum, qui harum suscipit
+        hic reiciendis ipsam rem. Expedita nulla nemo repellendus rem, quam labore libero iure perspiciatis?
+        Ullam unde placeat, saepe tenetur corrupti natus magni! Minus ab quidem nobis voluptatum soluta incidunt
+        officiis totam? Harum et omnis quam ipsa possimus, porro impedit iusto! Suscipit voluptates placeat repellat!
+        Doloremque in doloribus quod totam tenetur aliquid quisquam facere sint vel magni quaerat aliquam modi
+        voluptatum, minus atque enim ipsam! Hic quae, impedit ullam tempore eius consequuntur laborum sapiente. Quasi.
+        </p>
+    </main>
+
+</body>
+
+</html>
