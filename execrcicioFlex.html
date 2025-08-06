@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,20 @@
     <title>exercicio</title>
 
     <style>
+        /* @charset "UTF-8";  */
         * {
             padding: 0%;
             margin: 0%;
             font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
         }
 
-        div {
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div#cabecalho {
             background-color: darkgray;
             padding: 14px;
             margin-bottom: 20px;
@@ -25,16 +32,23 @@
 
         main {
             background-color: white;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             font-size: 22px;
             padding: 10px;
             border-radius: 10px;
             margin: 18px;
+
+            box-shadow: 2px 2px 3px black;
         }
-        li{
+
+        li {
             list-style: none;
             display: inline-block;
             margin: 3px;
+        }
+
+        ul {
+            border: 1px dotted black;
         }
 
         li a {
@@ -49,7 +63,9 @@
         h1 {
             color: white;
             margin-bottom: 9px;
-            display: inline-block;
+            /* display:inline-block; */
+            border: 1px dotted black;
+            width: 100vw;
         }
 
         li>a:hover {
@@ -57,7 +73,6 @@
             background-color: white;
             transition-timing-function: ease;
             transform: translate(-50%, -50%);
-
         }
 
         @media screen and (min-width :768px) {
@@ -81,7 +96,6 @@
 </head>
 
 <body>
-
     <div id="cabecalho">
         <h1> Meu Site</h1>
         <ul>
@@ -92,7 +106,6 @@
             <li><a href="">opcao 5</a></li>
             <li><a href=""> opcao 6</a></li>
         </ul>
-
     </div>
 
     <main>
@@ -108,7 +121,6 @@
         voluptatum, minus atque enim ipsam! Hic quae, impedit ullam tempore eius consequuntur laborum sapiente. Quasi.
         </p>
     </main>
-
 </body>
 
 </html>
