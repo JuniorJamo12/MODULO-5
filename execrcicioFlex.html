@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,105 +7,88 @@
     <title>exercicio</title>
 
     <style>
-        /* @charset "UTF-8";  */
-        * {
+
+           *{
             padding: 0%;
             margin: 0%;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:Arial, Helvetica, sans-serif ;
             box-sizing: border-box;
-        }
+           }
 
-        body {
-            width: 100vw;
-            height: 100vh;
-        }
+            div#cabecalho{
+                background-color: darkgray;
+                padding: 14px;
+                margin-bottom: 20px;
 
-        div#cabecalho {
-            background-color: darkgray;
-            padding: 14px;
-            margin-bottom: 20px;
-        }
-
-        body {
-            background-color: lightgray;
-        }
-
-        main {
-            background-color: white;
-            /* border: 1px solid black; */
-            font-size: 22px;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 18px;
-
-            box-shadow: 2px 2px 3px black;
-        }
-
-        li {
-            list-style: none;
-            display: inline-block;
-            margin: 3px;
-        }
-
-        ul {
-            border: 1px dotted black;
-        }
-
-        li a {
-            text-decoration: none;
-            color: white;
-            background-color: black;
-            font-size: 23px;
-            padding: 7px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            color: white;
-            margin-bottom: 9px;
-            /* display:inline-block; */
-            border: 1px dotted black;
-            width: 100vw;
-        }
-
-        li>a:hover {
-            color: black;
-            background-color: white;
-            transition-timing-function: ease;
-            transform: translate(-50%, -50%);
-        }
-
-        @media screen and (min-width :768px) {
-
-            /* body {
-                    display: flex;
-                    flex: row wrap;
-                } */
-
-            div#cabecalho {
                 display: flex;
                 flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
             }
 
-            ul {
-                flex: auto;
+            body {
+                background-color: lightgray ;
+            }
+
+            main{
+                background-color: white;
+                border: 1px solid black;
+                font-size: 22px ;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 18px;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                font-size: 23px;
+                padding: 7px;
+                margin: 3px;
+                border-radius: 10px;
+            }
+
+            nav{
+                border: 2px dotted black;
+                display: flex;
+                flex-flow: row wrap;
                 justify-content: flex-end;
             }
-        }
+
+    
+            h1{
+                color: white;
+                margin-bottom: 9px;
+                display: block;
+                border: 2px dotted black;
+                flex: 0 0 200px;
+
+            }
+
+            a:hover{
+                 color: black ;
+                 background-color: white;
+                 /* transition-timing-function: ease;
+                 transform: translate(-50%,-50%); */
+                 transform:background-color .5s;
+            }
+
     </style>
 </head>
 
 <body>
+
     <div id="cabecalho">
         <h1> Meu Site</h1>
-        <ul>
-            <li><a href="">opcao 1</a></li>
-            <li><a href=""> opcao 2</a></li>
-            <li><a href=""> opcao 3 </a></li>
-            <li><a href=""> opcao 4 </a></li>
-            <li><a href="">opcao 5</a></li>
-            <li><a href=""> opcao 6</a></li>
-        </ul>
+        <nav>
+            <a href="">opcao 1</a>
+            <a href=""> opcao 2</a>
+            <a href=""> opcao 3 </a>
+            <a href=""> opcao 4 </a>
+            <a href="">opcao 5</a>
+            <a href=""> opcao 6</a>
+        </nav>
     </div>
 
     <main>
@@ -121,6 +104,7 @@
         voluptatum, minus atque enim ipsam! Hic quae, impedit ullam tempore eius consequuntur laborum sapiente. Quasi.
         </p>
     </main>
+
 </body>
 
 </html>
