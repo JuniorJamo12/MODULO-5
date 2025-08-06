@@ -1,0 +1,32 @@
+
+nav {
+    height: 320px;
+    flex-flow: column nowrap;
+    /* margin: auto; */
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+header{
+    justify-content: center;
+    background-color: rebeccapurple;
+}
+
+nav a {
+    width: 80vw;
+    text-align: center;
+}
+
+
+span.material-symbols-outlined{
+    display: flex;
+    height: 25px;
+    font-size: 29px;
+    cursor: pointer;
+    user-select: none;
+
+}
